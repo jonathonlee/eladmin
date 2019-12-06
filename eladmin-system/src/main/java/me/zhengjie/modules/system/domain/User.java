@@ -28,6 +28,10 @@ public class User implements Serializable {
     private Long id;
 
     @NotBlank
+    @Column(name = "real_name")
+    private String realName;
+
+    @NotBlank
     @Column(unique = true)
     private String username;
 

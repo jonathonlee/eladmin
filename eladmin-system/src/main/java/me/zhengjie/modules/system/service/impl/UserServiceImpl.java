@@ -125,6 +125,7 @@ public class UserServiceImpl implements UserService {
         user.setDept(resources.getDept());
         user.setJob(resources.getJob());
         user.setPhone(resources.getPhone());
+        user.setRealName(resources.getRealName());
         userRepository.save(user);
     }
 

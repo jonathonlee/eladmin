@@ -82,7 +82,7 @@ public interface UserService {
     @CacheEvict(allEntries = true)
     void updateEmail(String username, String email);
 
-    @Cacheable
+//    @Cacheable
     Object queryAll(UserQueryCriteria criteria, Pageable pageable);
 
     @Cacheable
